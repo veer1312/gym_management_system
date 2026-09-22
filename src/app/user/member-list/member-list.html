@@ -1,0 +1,542 @@
+<div class="page-container">
+
+  <!-- Page Header -->
+
+  <div class="page-header">
+    <div>
+      <div class="breadcrumb">
+        <span>Members</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Member List</span>
+      </div>
+
+
+  <h1>Members</h1>
+  <p>Manage your gym members and their payments</p>
+</div>
+
+
+  </div>
+
+  <!-- Summary Cards -->
+
+  <div class="summary-grid">
+
+
+<!-- Total Members -->
+<div class="summary-card">
+  <div class="summary-icon">
+    <i class="fa-solid fa-users"></i>
+  </div>
+
+  <div class="summary-content">
+    <span>Total Members</span>
+    <h2>248</h2>
+    <small>All registered members</small>
+  </div>
+</div>
+
+
+<!-- Active Members -->
+<div class="summary-card">
+  <div class="summary-icon">
+    <i class="fa-solid fa-user-check"></i>
+  </div>
+
+  <div class="summary-content">
+    <span>Active Members</span>
+    <h2>216</h2>
+    <small>Currently active</small>
+  </div>
+</div>
+
+
+<!-- Payment Received -->
+<div class="summary-card">
+  <div class="summary-icon">
+    <i class="fa-solid fa-circle-check"></i>
+  </div>
+
+  <div class="summary-content">
+    <span>This Month Paid</span>
+    <h2>₹1,84,500</h2>
+    <small>September 2026</small>
+  </div>
+</div>
+
+
+<!-- Pending Payment -->
+<div class="summary-card">
+  <div class="summary-icon">
+    <i class="fa-solid fa-clock"></i>
+  </div>
+
+  <div class="summary-content">
+    <span>Pending Payment</span>
+    <h2>32</h2>
+    <small>Members pending</small>
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- Member List Card -->
+
+  <div class="form-card member-list-card">
+
+
+<!-- Card Header -->
+<div class="list-header">
+
+  <div>
+    <h3>Member List</h3>
+    <p>View and manage all gym members</p>
+  </div>
+
+  <div class="header-count">
+    <span>248 Members</span>
+  </div>
+
+</div>
+
+
+<!-- Filters -->
+<div class="filter-section">
+
+  <!-- Search -->
+  <div class="search-box">
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+    <input
+      type="text"
+      placeholder="Search by name, phone or email..."
+    />
+  </div>
+
+
+  <!-- Status -->
+  <div class="filter-item">
+    <select>
+      <option value="">All Status</option>
+      <option>Active</option>
+      <option>Inactive</option>
+      <option>Expired</option>
+    </select>
+  </div>
+
+
+  <!-- Payment -->
+  <div class="filter-item">
+    <select>
+      <option value="">Payment Status</option>
+      <option>Paid</option>
+      <option>Pending</option>
+      <option>Partial</option>
+    </select>
+  </div>
+
+
+  <!-- Reset -->
+  <button class="btn-filter-reset">
+    <i class="fa-solid fa-rotate-left"></i>
+    Reset
+  </button>
+
+</div>
+
+
+<!-- Current Month -->
+<div class="payment-month">
+  <div>
+    <i class="fa-regular fa-calendar"></i>
+    <span>Current Month Payment</span>
+  </div>
+
+  <strong>September 2026</strong>
+</div>
+
+
+<!-- Table -->
+<div class="table-responsive">
+
+  <table class="member-table">
+
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Member</th>
+        <th>Phone</th>
+        <th>Membership</th>
+        <th>Start Date</th>
+        <th>Expiry Date</th>
+        <th>Monthly Fee</th>
+        <th>Payment</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+
+      <!-- Member 1 -->
+      <tr>
+
+        <td>01</td>
+
+        <td>
+          <div class="member-info">
+
+            <div class="member-avatar">
+              AR
+            </div>
+
+            <div>
+              <strong>Arjun Rao</strong>
+              <span>arjun.rao@gmail.com</span>
+            </div>
+
+          </div>
+        </td>
+
+        <td>9876543210</td>
+
+        <td>
+          <span class="membership-name">
+            Monthly
+          </span>
+        </td>
+
+        <td>01 Sep 2026</td>
+
+        <td>30 Sep 2026</td>
+
+        <td>
+          <strong>₹2,000</strong>
+        </td>
+
+        <td>
+          <span class="payment-badge paid">
+            <i class="fa-solid fa-check"></i>
+            Paid
+          </span>
+        </td>
+
+        <td>
+          <span class="status-badge active">
+            Active
+          </span>
+        </td>
+
+        <td>
+          <button
+            class="btn-view"
+            title="View Details" routerLink="/user/member-details"
+          >
+            <i class="fa-solid fa-eye"></i>
+            View
+          </button>
+        </td>
+
+      </tr>
+
+
+      <!-- Member 2 -->
+      <tr>
+
+        <td>02</td>
+
+        <td>
+          <div class="member-info">
+
+            <div class="member-avatar">
+              PS
+            </div>
+
+            <div>
+              <strong>Priya Sharma</strong>
+              <span>priya.sharma@gmail.com</span>
+            </div>
+
+          </div>
+        </td>
+
+        <td>9123456780</td>
+
+        <td>
+          <span class="membership-name">
+            Quarterly
+          </span>
+        </td>
+
+        <td>15 Jul 2026</td>
+
+        <td>14 Oct 2026</td>
+
+        <td>
+          <strong>₹5,500</strong>
+        </td>
+
+        <td>
+          <span class="payment-badge paid">
+            <i class="fa-solid fa-check"></i>
+            Paid
+          </span>
+        </td>
+
+        <td>
+          <span class="status-badge active">
+            Active
+          </span>
+        </td>
+
+        <td>
+          <button
+            class="btn-view"
+            title="View Details"
+          >
+            <i class="fa-solid fa-eye"></i>
+            View
+          </button>
+        </td>
+
+      </tr>
+
+
+      <!-- Member 3 -->
+      <tr>
+
+        <td>03</td>
+
+        <td>
+          <div class="member-info">
+
+            <div class="member-avatar">
+              RK
+            </div>
+
+            <div>
+              <strong>Rahul Kumar</strong>
+              <span>rahul.kumar@gmail.com</span>
+            </div>
+
+          </div>
+        </td>
+
+        <td>9988776655</td>
+
+        <td>
+          <span class="membership-name">
+            Monthly
+          </span>
+        </td>
+
+        <td>05 Sep 2026</td>
+
+        <td>04 Oct 2026</td>
+
+        <td>
+          <strong>₹2,000</strong>
+        </td>
+
+        <td>
+          <span class="payment-badge pending">
+            <i class="fa-solid fa-clock"></i>
+            Pending
+          </span>
+        </td>
+
+        <td>
+          <span class="status-badge active">
+            Active
+          </span>
+        </td>
+
+        <td>
+          <button
+            class="btn-view"
+            title="View Details"
+          >
+            <i class="fa-solid fa-eye"></i>
+            View
+          </button>
+        </td>
+
+      </tr>
+
+
+      <!-- Member 4 -->
+      <tr>
+
+        <td>04</td>
+
+        <td>
+          <div class="member-info">
+
+            <div class="member-avatar">
+              SK
+            </div>
+
+            <div>
+              <strong>Sneha Kapoor</strong>
+              <span>sneha.kapoor@gmail.com</span>
+            </div>
+
+          </div>
+        </td>
+
+        <td>9876123456</td>
+
+        <td>
+          <span class="membership-name">
+            Half-Yearly
+          </span>
+        </td>
+
+        <td>10 Apr 2026</td>
+
+        <td>09 Oct 2026</td>
+
+        <td>
+          <strong>₹10,000</strong>
+        </td>
+
+        <td>
+          <span class="payment-badge partial">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            Partial
+          </span>
+        </td>
+
+        <td>
+          <span class="status-badge active">
+            Active
+          </span>
+        </td>
+
+        <td>
+          <button
+            class="btn-view"
+            title="View Details"
+          >
+            <i class="fa-solid fa-eye"></i>
+            View
+          </button>
+        </td>
+
+      </tr>
+
+
+      <!-- Member 5 -->
+      <tr>
+
+        <td>05</td>
+
+        <td>
+          <div class="member-info">
+
+            <div class="member-avatar">
+              AM
+            </div>
+
+            <div>
+              <strong>Amit Mishra</strong>
+              <span>amit.mishra@gmail.com</span>
+            </div>
+
+          </div>
+        </td>
+
+        <td>9090909090</td>
+
+        <td>
+          <span class="membership-name">
+            Monthly
+          </span>
+        </td>
+
+        <td>20 Aug 2026</td>
+
+        <td>19 Sep 2026</td>
+
+        <td>
+          <strong>₹2,000</strong>
+        </td>
+
+        <td>
+          <span class="payment-badge pending">
+            <i class="fa-solid fa-clock"></i>
+            Pending
+          </span>
+        </td>
+
+        <td>
+          <span class="status-badge expired">
+            Expired
+          </span>
+        </td>
+
+        <td>
+          <button
+            class="btn-view"
+            title="View Details"
+          >
+            <i class="fa-solid fa-eye"></i>
+            View
+          </button>
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+
+<!-- Table Footer -->
+<div class="table-footer">
+
+  <div class="showing-text">
+    Showing <strong>1</strong> to <strong>5</strong>
+    of <strong>248</strong> members
+  </div>
+
+  <div class="pagination">
+
+    <button class="pagination-btn">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <button class="pagination-btn active">
+      1
+    </button>
+
+    <button class="pagination-btn">
+      2
+    </button>
+
+    <button class="pagination-btn">
+      3
+    </button>
+
+    <span>...</span>
+
+    <button class="pagination-btn">
+      50
+    </button>
+
+    <button class="pagination-btn">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+  </div>
+
+</div>
+
+
+  </div>
+
+</div>

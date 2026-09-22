@@ -15,6 +15,12 @@ export const routes: Routes = [
           import('./user/user.routes')
             .then(m => m.USER_ROUTES)
       },
+      {
+        path: 'payment',
+        loadChildren: () =>
+          import('./payment/payment.routes')
+            .then(m => m.PAYMENT_ROUTES)
+      },
     ]
   },
 

@@ -1,0 +1,218 @@
+<div class="page-container">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div>
+      <div class="breadcrumb">
+        <span>Members</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Payment</span>
+      </div>
+
+      <h1>Make Payment</h1>
+      <p>Complete the payment for your membership</p>
+    </div>
+
+    <button class="btn-back" type="button">
+      <i class="fa-solid fa-arrow-left"></i>
+      Back to Members
+    </button>
+  </div>
+
+  <!-- Member Summary -->
+  <div class="form-card">
+    <div class="card-header">
+      <div class="section-icon">
+        <i class="fa-solid fa-user"></i>
+      </div>
+
+      <div>
+        <h3>Member Information</h3>
+        <p>Registered member details</p>
+      </div>
+    </div>
+
+    <div class="member-summary">
+      <div class="member-avatar">RK</div>
+
+      <div class="member-details">
+        <h3>Rahul Kumar</h3>
+        <span>Member ID: MEM-00125</span>
+      </div>
+
+      <div class="member-status">
+        <span class="status-badge active">
+          <i class="fa-solid fa-circle"></i>
+          Active
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Membership Details -->
+  <div class="form-card">
+    <div class="card-header">
+      <div class="section-icon">
+        <i class="fa-solid fa-id-card"></i>
+      </div>
+
+      <div>
+        <h3>Membership Details</h3>
+        <p>Current membership information</p>
+      </div>
+    </div>
+
+    <div class="details-grid">
+      <div class="detail-item">
+        <label>Membership Plan</label>
+        <strong>Premium Monthly</strong>
+      </div>
+
+      <div class="detail-item">
+        <label>Monthly Fee</label>
+        <strong>₹1,500</strong>
+      </div>
+
+      <div class="detail-item">
+        <label>Membership Start</label>
+        <strong>01 Sep 2026</strong>
+      </div>
+
+      <div class="detail-item">
+        <label>Membership Expiry</label>
+        <strong>30 Sep 2026</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Payment Details -->
+  <div class="form-card">
+    <div class="card-header">
+      <div class="section-icon">
+        <i class="fa-solid fa-wallet"></i>
+      </div>
+
+      <div>
+        <h3>Payment Details</h3>
+        <p>Select payment month and payment method</p>
+      </div>
+    </div>
+
+    <div class="payment-month-card">
+      <div>
+        <span>Payment For</span>
+        <strong>October 2026</strong>
+      </div>
+
+      <div class="payment-status pending">
+        <i class="fa-solid fa-clock"></i>
+        Payment Pending
+      </div>
+    </div>
+
+    <div class="row g-3 mt-1">
+      <!-- Membership Plan -->
+      <div class="col-md-4">
+        <label class="form-label required"> Membership Plan </label>
+
+        <select class="form-select">
+          <option value="">Select Membership Plan</option>
+          <option value="monthly">Monthly</option>
+          <option value="quarterly">Quarterly</option>
+          <option value="half-yearly">Half Yearly</option>
+          <option value="yearly">Yearly</option>
+        </select>
+      </div>
+
+      <!-- Payment Amount -->
+      <div class="col-md-4">
+        <label class="form-label required"> Payment Amount </label>
+
+        <div class="amount-box">
+          <span>₹</span>
+          <input type="text" value="1500" />
+        </div>
+      </div>
+
+      <!-- Payment Method -->
+      <div class="col-md-4">
+        <label class="form-label required"> Payment Method </label>
+
+        <select class="form-select">
+          <option value="">Select Payment Method</option>
+          <option value="upi">UPI</option>
+          <option value="card">Credit / Debit Card</option>
+          <option value="netbanking">Net Banking</option>
+          <option value="cash">Cash</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Previous Payment -->
+  <div class="form-card">
+    <div class="card-header">
+      <div class="section-icon">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+      </div>
+
+      <div>
+        <h3>Previous Payment</h3>
+        <p>Last payment information</p>
+      </div>
+    </div>
+
+    <div class="previous-payment">
+      <div>
+        <span>September 2026</span>
+        <strong>₹1,500</strong>
+      </div>
+
+      <div>
+        <small>Payment Date</small>
+        <strong>01 Sep 2026</strong>
+      </div>
+
+      <div>
+        <small>Payment Method</small>
+        <strong>UPI</strong>
+      </div>
+
+      <div>
+        <span class="payment-badge paid">
+          <i class="fa-solid fa-check"></i>
+          Paid
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Payment Summary -->
+  <div class="payment-summary">
+    <div class="summary-row">
+      <span>Membership Fee</span>
+      <strong>₹1,500</strong>
+    </div>
+
+    <div class="summary-row">
+      <span>Discount</span>
+      <strong>₹0</strong>
+    </div>
+
+    <div class="summary-divider"></div>
+
+    <div class="summary-row total">
+      <span>Total Amount</span>
+      <strong>₹1,500</strong>
+    </div>
+  </div>
+
+  <!-- Actions -->
+  <div class="form-actions">
+    <button class="btn-cancel" type="button">Cancel</button>
+
+    <button class="btn-primary" type="button">
+      <i class="fa-solid fa-credit-card"></i>
+      Pay ₹1,500
+    </button>
+  </div>
+</div>
