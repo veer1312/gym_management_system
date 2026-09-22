@@ -1,5 +1,5 @@
-import { Component, HostListener } from '@angular/core';
- import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-user-sidebar',
@@ -11,23 +11,19 @@ export class UserSidebar {
 
   isCollapsed = false;
 
-  isMobileOpen = false;
+  @Input() isMobileOpen = false;
+
+  @Output() closeSidebar = new EventEmitter<void>();
 
 
   // =========================
-  // TOGGLE SIDEBAR
+  // DESKTOP COLLAPSE
   // =========================
 
   toggleSidebar(): void {
 
-    if (window.innerWidth <= 768) {
-
-      this.isMobileOpen = !this.isMobileOpen;
-
-    } else {
-
+    if (window.innerWidth > 768) {
       this.isCollapsed = !this.isCollapsed;
-
     }
 
   }
@@ -40,9 +36,7 @@ export class UserSidebar {
   closeMobileSidebar(): void {
 
     if (window.innerWidth <= 768) {
-
-      this.isMobileOpen = false;
-
+      this.closeSidebar.emit();
     }
 
   }
@@ -55,8 +49,6 @@ export class UserSidebar {
   logout(): void {
 
     localStorage.removeItem('token');
-
-    // Add your logout API/service here later
 
     window.location.href = '/login';
 
@@ -71,9 +63,7 @@ export class UserSidebar {
   onResize(): void {
 
     if (window.innerWidth > 768) {
-
-      this.isMobileOpen = false;
-
+      this.closeSidebar.emit();
     }
 
   }

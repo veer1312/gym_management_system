@@ -12,4 +12,20 @@ import { Footer } from '../../user/footer/footer';
 })
 export class MainLayout {
 
+   isMobileOpen = false;
+
+
+  toggleMobileSidebar(): void {
+
+    this.isMobileOpen = !this.isMobileOpen;
+
+  }
+
+
+  closeMobileSidebar(): void {
+
+    this.isMobileOpen = false;
+
+  }
+
 }
